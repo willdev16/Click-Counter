@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-let clicks = localStorage.getItem('clicks') ? parseInt(localStorage.getItem('clicks')) : clicks;
+let clicks = 0;
 const display = document.getElementById('display')
 const button = document.getElementById("button");
 
@@ -16,6 +16,5 @@ button.addEventListener('click', () => {
     clicks++;
     display.textContent = clicks;
     
-
-    localStorage.setItem('clicks', clicks);
+    
 });
